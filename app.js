@@ -17,6 +17,7 @@ $.ajax({
         newDiv.append($("<div>").text(article[i].headline.main));
         var image = $("<img>");
         image.attr('src', "https://www.nytimes.com/" + article[i].multimedia[0].url);
+        image.attr('height', '300px');
         newDiv.append($("<div>").html(image));
         var link = $("<a>");
         link.attr("href",article[i].web_url);
