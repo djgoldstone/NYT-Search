@@ -15,6 +15,9 @@ $.ajax({
     for (var i = 0; i < searchNumber; i++) {
         var newDiv = $("<div>");
         newDiv.append($("<div>").text(article[i].headline.main));
+        var image = $("<img>");
+        image.attr('src', "https://www.nytimes.com/" + article[i].multimedia[0].url);
+        newDiv.append($("<div>").html(image));
         var link = $("<a>");
         link.attr("href",article[i].web_url);
         var linktext = link.text(article[i].web_url);
