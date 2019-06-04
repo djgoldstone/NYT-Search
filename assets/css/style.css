@@ -1,3 +1,7 @@
 #header-text {
     text-align: center;
 }
+.navbar navbar-dark bg-dark d-flex justify-content-center mb-3 {
+    background-color: navy;
+    color: white;
+}
