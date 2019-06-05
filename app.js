@@ -41,8 +41,14 @@ $("#search").on("click", function () {
             newDiv.append($("<div>").text(article[i].snippet));
             var date = article[i].pub_date;
             var newDate = date.split('T');
-            newDiv.append($("<div>").text("Date: " + newDate[0]));
+            newDiv.append($("<div>").html("Date: " + newDate[0]));
+            newDiv.append($("<br>"));
             $("#top-articles").append(newDiv);
         }
     })
+})
+
+$("#clear").on("click", function(){
+    event.preventDefault();
+    $("#top-articles").empty();
 })
