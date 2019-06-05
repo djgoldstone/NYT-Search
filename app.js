@@ -1,5 +1,6 @@
 $("#search").on("click", function () {
     event.preventDefault();
+    $("#top-articles").empty();
     var search = $("#search-term").val();
     console.log(search);
     var searchNumber = $("#search-number").val();
